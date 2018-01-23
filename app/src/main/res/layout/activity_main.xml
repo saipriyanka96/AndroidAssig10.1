@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layout.assig10se1.MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="33dp"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+         />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+
+        android:background="#77d6f9">
+
+    </FrameLayout>
+</RelativeLayout>
+    <!--
+    FrameLayout should be used to hold a single child view, because it can be difficult to organize child views in a way that's scalable to
+    different screen sizes without the children overlapping each other.
+        RelativeLayout is a view group that displays child views in relative positions.
+       ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+        When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+         as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+         it very often
+       wrap_content tells your view to size itself to the dimensions required by its content.
+       match_parent tells your view to become as big as its parent view group will allow.
+       TextSize will give size of the text-->
